@@ -1,0 +1,72 @@
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/a78539b396.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/editor.css" />
+    <link
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap"
+    rel="stylesheet" />
+    <link rel="shortcut icon" href="./images/stconlogo.png"/>
+    <title>Editor</title>
+</head>
+
+<body>   
+<div class="container">
+    <div class="toolbar">
+        <div class="top">
+            <input type="text" placeholder="File Name" value="untitled">
+            <select>
+                <option value="" selected="" hidden="" disabled="">File</option>
+                <option value="new">New file</option>
+                <option value="wrd">Save as Word document</option>
+                <option value="pdf">Save as PDF</option>
+            </select>
+            <select>
+                <option value="" selected="" hidden="" disabled="">Format</option>
+                <option value="h1">Heading 1</option>
+                <option value="h2">Heading 2</option>
+                <option value="h3">Heading 3</option>
+                <option value="p">Paragraph</option>
+            </select>
+            <select>
+                <option value="" selected="" hidden="" disabled="">Font size</option>
+                <option value="1">12</option>
+                <option value="2">16</option>
+                <option value="3">24</option>
+                <option value="4">32</option>
+                <option value="5">64</option>
+                <option value="cus">Custom...</option>
+            </select>
+            <div class="color">
+                <span>Colour</span>
+                <input type="color">
+            </div>
+            <div class="color">
+                <span>Background</span>
+                <input type="color">
+            </div>
+    </div>
+    <div class="toolbar-button">
+        <button style="margin-right: 12px;" onclick='formatDoc("undo")'><i class="fas fa-undo-alt"></i></button>
+        <button style="margin-right: 6px;" onclick='formatDoc("redo")'><i class="fas fa-redo-alt"></i></button>
+        <button onclick='formatDoc("bold")'><i class="fas fa-bold"></i></button>
+        <button onclick='formatDoc("underline")'><i class="fas fa-underline"></i></button>
+        <button onclick='formatDoc("italic")'><i class="fas fa-italic"></i></button>
+        <button onclick='formatDoc("strikethrough")'><i class="fas fa-strikethrough"></i></button>
+        <button onclick='formatDoc("justifyLeft")'><i class="fas fa-align-left"></i></button>
+        <button onclick='formatDoc("justifyCenter")'><i class="fas fa-align-center"></i></button>
+        <button onclick='formatDoc("justifyRight")'><i class="fas fa-align-right"></i></button>
+        <button onclick='formatDoc("justifyFull")'><i class="fas fa-align-justify"></i></button>
+        <button onclick='formatDoc("insertOrderedList")'><i class="fas fa-list-ol"></i></button>
+        <button onclick='formatDoc("insertUnorderedList")'><i class="fas fa-list-ul"></i></button>
+        <button><i class="fas fa-link"></i></button>
+        <button style="margin-right: 208px;"><i class="fas fa-unlink"></i></button>
+        <button><i class="fas fa-search"></i></button>
+        <button id="errors"><i class="fas fa-exclamation-circle"></i></button>
+    </div>
+    </div>
+    <div class="editor" contenteditable="true" spellcheck="true">
+        Start writing here..
+    </div>
+    <script src="js/editor.js"></script>
+</div>
+</body> 

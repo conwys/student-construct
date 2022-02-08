@@ -1,0 +1,185 @@
+body {
+    background-color: rgb(7, 8, 99);
+}
+
+@font-face {
+    font-family: mainFont;
+    src: url(./couture-bld.otf);
+  }
+
+@font-face {
+    font-family: lightScript;
+    src: url(./ABChanelCouture-Light.ttf)
+}
+  
+h1 {
+    color: white;
+    text-align: center;
+    font-family: mainFont;
+    padding: 8px;
+    margin: 10px;
+}
+
+small {
+    color: white;
+    text-align: center;
+    font-family: mainFont;
+    padding: 10px;
+    margin: 10px;
+}
+
+.reduced {
+    font-display: flex;
+    margin: 10px;
+    line-height: 20%;
+    font-size: 16px;
+    padding: 0px;
+}
+
+.text-shadow {
+    text-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;;
+    text-align: center;
+    font-family: mainFont;
+    padding: 8px;
+    margin: 10px;
+  }
+
+.bg-img {
+  background-image: url("./classroomgradient.jpg");
+  min-height: 380px;
+  background-position: 65% 69%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.container {
+  position: absolute;
+  margin: 20px;
+  width: auto;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: Open Sans;
+}
+
+.topnav a:hover {
+  background-color: rgb(82, 97, 226);
+  color: rgb(255, 255, 255);
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  font-family: Open Sans;
+  background-color: rgba(0, 0, 0, 0.329);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
